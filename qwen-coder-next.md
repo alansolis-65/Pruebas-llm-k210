@@ -213,3 +213,8 @@ if __name__ == "__main__":
 1.  **Firmware:** Tu placa K210 debe tener instalado el firmware de **MaixPy** o **CanMV**.
 2.  **Modelo:** Debes descargar el modelo `face_model_at_0x300000.kfpkg` y quemarlo en la memoria Flash de tu placa en la dirección `0x300000` utilizando la herramienta `kflash`. Si prefieres cargarlo desde una tarjeta SD, cambia la línea `task = KPU.load(MODEL_ADDR)` por `task = KPU.load("/sd/face.kmodel")` y asegúrate de que el archivo esté en la raíz de la SD.
 3.  **Hardware:** La placa debe tener conectada una cámara OV2640 y una pantalla LCD (de 2.4" o similar) para que los pines de `lcd` y `sensor` funcionen por defecto. Si usas una placa diferente (como la Maix Bit Go), es posible que tengas que ajustar la inicialización del LCD (`lcd.init(type=1)`).
+
+
+NOTA.- Omitio comentar sobre el codigo alternativo para leer el modelo
+# Cargar el modelo KPU para detección de rostros
+task = kpu.load("/sd/face_detection.kmodel")  # Asegúrate de que el modelo esté en la SD
