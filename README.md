@@ -1,6 +1,6 @@
 # Pruebas-llm-k210
 Pruebas de programacion por LLM para el chip k210
-Utilizando una misma instruccion, se compara las tres mejores codigos, se probaron otros pero el codigo era incompleto
+Utilizando una misma instruccion, se compara las tres mejores codigos, se probaron otros modelos pero el codigo era incompleto por lo que no se incluyeron
 *Aun no se realizan las pruebas en las placa de desarrollo
 
 Instruccion Inicial:
