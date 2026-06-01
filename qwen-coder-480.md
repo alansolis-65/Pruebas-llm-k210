@@ -111,3 +111,5 @@ kpu.deinit(task)
 - Asegúrate de que el modelo `.kmodel` esté correctamente convertido y colocado en la tarjeta SD.
 - Puedes ajustar los umbrales de movimiento según sea necesario.
 - El código asume que estás usando MaixPy, que es la implementación de MicroPython para K210.
+
+Nota.- no genero la limpieza de memoria para evitar fugas
